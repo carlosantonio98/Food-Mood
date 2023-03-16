@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food mood</title>
+
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav bd-container">
+            <div class="nav__logo">
+                Food<span>Mood</span>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Our Special</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Our Location</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Our Cheffs</a></li>
+                </ul>
+            </div>
+            <div class="nav__buttons">
+                <a href="#" class="nav__button">
+                    <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path d="M17.5001 18.3065L25.1934 26" stroke-width="3"/>
+                        <circle cx="11" cy="11" r="9.5" stroke-width="3"/>
+                    </svg>
+                </a>
+                <a href="#" class="nav__button nav__button--active">
+                    <svg width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <circle cx="14" cy="8" r="6.5" stroke-width="3"/>
+                        <path d="M24 27C24 22.5817 19.5228 19 14 19C8.47715 19 4 22.5817 4 27" stroke-width="3"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="nav__toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!--===== Scroll line =====-->
+    <div class="lines">
+        <div class="line" data-number="01"></div>
+        <div class="line line--active" data-number="02"></div>
+        <div class="line" data-number="03"></div>
+    </div>
+
+    <main>
+        <!--===== HOME =====-->
+        <section class="hero">
+            <div class="hero__container bd-container bd-grid">
+                <div class="hero__data">
+                    <h2 class="hero__title">KA<span>BAB</span></h2>
+                    <p class="hero__subtitle">Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                    
+                    <div class="hero__buttons">
+                        <a class="hero__button hero__button--primary" href="#">ORDER NOW</a>
+                        <a class="hero__button hero__button--outline" href="#">VIEW MORE</a>
+                    </div>
+
+                    <div class="hero__schedules">
+                        <div class="hero__schedule">
+                            <span>Lunch</span>
+                            <p>1:00-03:00pm</p>
+                        </div>
+                        <div class="hero__schedule">
+                            <span>Dinner</span>
+                            <p>7:00-10:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const navbarMenu = document.querySelector('.nav__menu');
+        const navbarToggle = document.querySelector('.nav__toggle');
+        
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('nav__show');
+            navbarToggle.classList.toggle('nav__toggle--active');
+        });
+    </script>
+</body>
+</html>
