@@ -1,4 +1,4 @@
-# Diseño de sitio web de peliculas
+# Diseño de sitio web FoodMood
 Diseño de sitio web FoodMood, sitio con responsividad e interacción
 
 **Tecnologías utilizadas:**
